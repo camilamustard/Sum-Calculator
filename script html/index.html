@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <H1>Calculadora de Soma</H1>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="number" id="num1" placeholder="Número 1">
+        <input type="number" id="num2" placeholder="Número 2">
+        <button onclick="calculateSum()">Calcular</button>
+        <div id="result">Resultado: </div>
+    </div>
+    <script>
+        function calculateSum() {
+            var num1 = parseFloat(document.getElementById('num1').value) || 0;
+            var num2 = parseFloat(document.getElementById('num2').value) || 0;
+            var sum = num1 + num2;
+            document.getElementById('result').innerText = 'Resultado: ' + sum;
+        }
+    </script>
+</body>
+</html>

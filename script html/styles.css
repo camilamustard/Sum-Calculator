@@ -1,0 +1,93 @@
+/* 0. Resetando estilos padrão */
+h1 {
+    font-family: 'Jazz LET', fantasy; /* Fonte minimalista */
+    font-size: 32px; /* Tamanho da fonte */
+    font-weight: 300; /* Peso da fonte leve */
+    color: #333333; /* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    margin-top: 20px; /* Espaço superior */
+    margin-bottom: 20px; /* Espaço inferior */
+    text-transform: none; /* Mantém o texto como foi digitado */
+    letter-spacing: 1px; /* Espaçamento entre as letras */
+    background-color: #f8f8f8; /* Cor de fundo suave */
+    padding: 10px 20px; /* Preenchimento interno */
+    border-radius: 5px; /* Bordas levemente arredondadas */
+    transition: all 0.3s ease; /* Suaviza a transição para efeitos de hover */
+}
+
+h1:hover {
+    color: #ffffff; /* Muda a cor do texto ao passar o mouse */
+    background-color: #000000; /* Muda a cor de fundo ao passar o mouse */
+    transform: scale(1.05); /* Expande ligeiramente o título */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra */
+}
+/* 1. Resetando margens e preenchimento */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* 2. Definindo o estilo do corpo */
+body {
+     font-family: 'Arial', sans-serif; 
+     display: flex; 
+     justify-content: center; 
+     align-items: center; 
+     height: 100vh; 
+     background-color: #f0f0f0; 
+}
+
+/* 3. Estilizando a calculadora */
+.calculator {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    width: 100%;
+}
+
+/* 4. Estilizando os campos de entrada */
+input[type="number"] {
+     width: calc(100% - 22px); 
+     padding: 12px; 
+     margin-bottom: 15px; 
+     border: 2px solid #ddd; 
+     border-radius: 8px; 
+     font-size: 16px; 
+     transition: border-color 0.3s ease; 
+}
+
+input[type="number"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* 5. Estilizando o botão */
+button {
+     width: 100%;
+     padding: 12px;
+     background-color: #007bff;
+     border: none;
+     border-radius: 8px;
+     color: #ffffff;
+     font-size: 16px;
+     cursor: pointer;
+     transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+     background-color: #0056b3;
+     transform: scale(1.05);
+}
+
+/* 6. Estilizando o resultado */
+#result {
+     margin-top: 15px; 
+     font-size: 18px; 
+     font-weight: bold; 
+     color: #333; 
+}
+
